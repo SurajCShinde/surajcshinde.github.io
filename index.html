@@ -4,6 +4,21 @@
 		<title></title>
 		
 		<link rel="stylesheet" href="css/bootstrap.min.css" >
+		<style type="text/css" media="screen">
+			.blink{
+		/*font-size: 240px;*/
+		color: rgb (0, 137, 226);
+		
+		animation: blink 1s infinite;
+	 }
+	 
+	 @keyframes blink{
+		0%{opacity: 1;}
+		75%{opacity: 1;}
+		76%{ opacity: 0;}
+		100%{opacity: 0;}
+	 }
+		</style>
 	</head>
 	<body>
 		
@@ -12,13 +27,15 @@
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title" id="exampleModalLabel">50% Discount</h4>
+						<h4 class="modal-title "id="exampleModalLabel">50% Discount</h4>
+						
 					</div>
 					<div class="modal-body">
 						<center>
+
 						<h1 class="modal-title" id="exampleModalLabel">Lonavala Foods</h1>
 						<br>
-						<h3 class="modal-title" id="exampleModalLabel">50% Discount On First Order</h3>
+						<h3 class="modal-title blink" id="exampleModalLabel">50% Discount On First Order</h3>
 						</center>
 						<br>
 						
