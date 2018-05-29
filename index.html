@@ -1,90 +1,127 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title></title>
-		
-		<link rel="stylesheet" href="css/bootstrap.min.css" >
-		<style type="text/css" media="screen">
-			.blink{
-		/*font-size: 240px;*/
-			Color: #e4024f;
-			font-weight: bolder;
-			text-shadow: 2px 3px 3px #d0bac1;
-			animation: blink 1s infinite;
-	 }
-	 
-	 @keyframes blink{
-		0%{opacity: 1;}
-		75%{opacity: 1;}
-		76%{ opacity: 0;}
-		100%{opacity: 0;}
-	 }
-		</style>
-	</head>
-	<body>
-		
-		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header btn-info" style="border-radius: 5px 5px 0px 0px;">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title "id="exampleModalLabel" >50% Discount</h4>
-						
-					</div>
-					<div class="modal-body">
-						<center>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style type="text/css" media="screen">
+      .blink{
+    /*font-size: 240px;*/
+      Color: #e4024f;
+      font-weight: bolder;
+      text-shadow: 2px 3px 3px #d0bac1;
+      animation: blink 1s infinite;
+   }
+   
+   @keyframes blink{
+    0%{opacity: 1;}
+    75%{opacity: 1;}
+    76%{ opacity: 0;}
+    100%{opacity: 0;}
+   }
+    </style>
+  </head>
+  <body>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header btn-info" style="border-radius: 5px 5px 0px 0px;">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title "id="exampleModalLabel" >50% Discount</h4>
+            
+          </div>
+          <div class="modal-body">
+            <center>
 
-						<h1 class="modal-title" id="exampleModalLabel">Lonavala Foods</h1>
-						<br>
-						<h3 class="modal-title blink" id="exampleModalLabel">50% Discount On First Order</h3>
-						</center>
-						<br>
-						
-						<form class="form-horizontal" action="/action_page.php">
-							<div class="form-group">
-								<label class="control-label col-sm-4" >Name:</label>
-								<div class="col-sm-6">
-									<input type="text" class="form-control"  placeholder="Enter Name">
-								</div>
-							</div>
+            <h1 class="modal-title" id="exampleModalLabel">Lonavala Foods</h1>
+            <br>
+            <h3 class="modal-title blink" id="exampleModalLabel">50% Discount On First Order</h3>
+            </center>
+            <br>
+            
+            <form class="form-horizontal" action="/action_page.php">
+              <div class="form-group">
+                <label class="control-label col-sm-4" >Name:</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control"  placeholder="Enter Name">
+                </div>
+              </div>
 
-							<div class="form-group">
-								<label class="control-label col-sm-4" >Contact Number:</label>
-								<div class="col-sm-6">
-									<input type="text" class="form-control" placeholder="Enter Contact Number">
-								</div>
-							</div>
+              <div class="form-group">
+                <label class="control-label col-sm-4" >Contact Number:</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" placeholder="Enter Contact Number">
+                </div>
+              </div>
 
-							<div class="form-group">
-								<label class="control-label col-sm-4" >Email Id:</label>
-								<div class="col-sm-6">
-									<input type="text" class="form-control" placeholder="Enter Email Id">
-								</div>
-							</div>
+              <div class="form-group">
+                <label class="control-label col-sm-4" >Email Id:</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" placeholder="Enter Email Id">
+                </div>
+              </div>
 
-							<div class="form-group">
-								<label class="control-label col-sm-4" >Your Location(City):</label>
-								<div class="col-sm-6">
-									<input type="text" class="form-control" placeholder="Enter Your Location(City)">
-								</div>
-							</div>							
-						</form>				
-					</div>
-					<div class="modal-footer btn-info" style="border-radius: 0px 0px 5px 5px;">
-						<center>
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						<button type="button" class="btn btn-primary">Submit</button>
-						</center>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script src="js/jquery.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script>
-		$(document).ready(function(){
-		$('#exampleModal').modal('show');
-		});
-		</script>
-	</body>
+              <div class="form-group">
+                <label class="control-label col-sm-4" >Your Location(City):</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" placeholder="Enter Your Location(City)">
+                </div>
+              </div>              
+            </form>       
+          </div>
+          <div class="modal-footer btn-info" style="border-radius: 0px 0px 5px 5px;">
+            <center>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Submit</button>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <nav class="navbar " style="margin-bottom:1px;">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <img class="navbar-brand" src="img/img1.jpg" alt="logo" >
+          <a class="navbar-brand" href="#" style="font-size:x-large;">LonavalaFoods.com</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          <li><button class="btn btn-primary" type="submit" style="margin-top: 9px;"><span class="glyphicon glyphicon-shopping-cart"></span>  SHOPPING CART</button></li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+          <li><a href="#"> Services</a></li>
+          <li><a href="#"> Shops</a></li>
+          <li><a href="#">New Product</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+        <form class="navbar-form navbar-right" action="/action_page.php">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+    </nav>
+    
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $('#exampleModal').modal('show');
+    });
+    </script>
+  </body>
 </html>
