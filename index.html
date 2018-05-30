@@ -2,10 +2,11 @@
 <html>
   <head>
     <title></title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <!-- <link rel="stylesheet" href="bootstrap.min.css" >  -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" > -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
     <style type="text/css" media="screen">
     .blink{
     /*font-size: 240px;*/
@@ -27,15 +28,32 @@
     display: inline-block;
     }
     .pro_list{
-      border-bottom: 2px blue dotted;
+    border-bottom: 2px blue dotted;
     padding-bottom: 10px;
     padding-top: 10px;
     }
-
-
     .plist{
     display: inline-block;
     
+    }
+    ul>li{
+    padding: 2px 2px;
+    }
+    .half {
+    position:relative;
+    }
+    .font{
+    /*font-size:6em;*/
+    }
+    .half:before {
+    content: "\e006"; /* put here default icon code*/
+    width: 47%;
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    }
+    .half:after {
+    content: "\e007"; /* put here icon-empty code*/
     }
     </style>
   </head>
@@ -85,8 +103,9 @@
           </div>
           <div class="modal-footer btn-info" style="border-radius: 0px 0px 5px 5px;">
             <center>
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             <button type="button" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            
             </center>
           </div>
         </div>
@@ -127,8 +146,9 @@
     
     <!-- main body aside and article -->
     <div class="container-fluid">
+      
       <div class="row">
-        <div class="col-lg-4" >
+        <div class="col-lg-4 " style="margin-bottom:20px;">
           <nav class="navbar navbar-inverse">
             <div class="navbar-header">
               <a class="navbar-brand" href="#" style="font-size:large;"><span class="glyphicon glyphicon-stats"></span> Most Viewed</a>
@@ -136,28 +156,66 @@
           </nav>
           <!-- Products List -->
           
-          <div class="pro_list">
-            <img class="plist_img" src="img/product/1.jpg" alt="">
-            <ul type="none" class="plist">
-              <li><a href="#">Lonavla special Corn Buttha</a></li>
-              <li><p >Price: Rs.00:00/- only</p></li>
-            </ul>
+          <div class="row pro_list">
+            <div class="col-lg-4" style="float:left;">
+              <img class="plist_img" src="img/product/1.jpg" alt="">
+            </div>
+            <div class="col-lg-8">
+              <ul type="none" class="plist">
+                <li>
+                  <button class="btn btn-info" type="Submit">
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  </button>
+                </li>
+                <li><a href="#"><span class="glyphicon glyphicon-tags"></span> Lonavla special Corn Buttha</a></li>
+                <li><span class="glyphicon glyphicon-tags"></span>  Price: Rs.00:00/- only </li>
+              </ul>
+            </div>
           </div>
-          <div class="pro_list">
-            <img class="plist_img" src="img/product/2.jpg" alt="">
-            <ul type="none" class="plist">
-              <li><a href="#">Lonavla Sweet Chikki</a></li>
-              <li><p >Price: Rs.00:00/- only</p></li>
-            </ul>
+          <div class="row pro_list">
+            <div class="col-lg-4" style="float:left;">
+              <img class="plist_img" src="img/product/2.jpg" alt="">
+            </div>
+            <div class="col-lg-8">
+              <ul type="none" class="plist">
+                <li>
+                  <button class="btn btn-info" type="Submit">
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star "></span>
+                  <span class="glyphicon glyphicon-star half "></span>
+                  <span class="glyphicon glyphicon-star-empty"></span>
+                  </button>
+                </li>
+                <li><a href="#"><span class="glyphicon glyphicon-tags"></span> Lonavla Sweet Chikki</a></li>
+                <li><span class="glyphicon glyphicon-tags"></span>  Price: Rs.00:00/- only </li>
+              </ul>
+            </div>
           </div>
-          <div class="pro_list">
-            <img class="plist_img" src="img/product/3.jpg" alt="">
-            <ul type="none" class="plist">
-              <li><a href="#">Lonavla Corn Pakoda</a></li>
-              <li><p >Price: Rs.00:00/- only</p></li>
-            </ul>
+          <div class="row pro_list">
+            <div class="col-lg-4" style="float:left;">
+              <img class="plist_img" src="img/product/3.jpg" alt="">
+            </div>
+            <div class="col-lg-8">
+              <ul type="none" class="plist">
+                <li>
+                  <button class="btn btn-info" type="Submit">
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star half"></span>
+                  <span class="glyphicon glyphicon-star-empty"></span>
+                  <span class="glyphicon glyphicon-star-empty"></span>
+                  </button>
+                </li>
+                <li><a href="#"><span class="glyphicon glyphicon-tags"></span> Lonavla Corn Pakoda </a></li>
+                <li><span class="glyphicon glyphicon-tags"></span>  Price: Rs.00:00/- only </li>
+              </ul>
+            </div>
           </div>
-
           
         </div>
         <div class="col-lg-8">
@@ -217,9 +275,11 @@
         </div>
       </div>
     </div>
-    
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- <script src="js/jquery.js"></script> -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
     <script>
     $(document).ready(function(){
     $('#exampleModal').modal('show');
