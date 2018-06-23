@@ -1,289 +1,134 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <title></title>
-    <!-- <link rel="stylesheet" href="bootstrap.min.css" >  -->
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" > -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
-    <style type="text/css" media="screen">
-    .blink{
-    /*font-size: 240px;*/
-    Color: #e4024f;
-    font-weight: bolder;
-    text-shadow: 2px 3px 3px #d0bac1;
-    animation: blink 1s infinite;
-    }
-    
-    @keyframes blink{
-    0%{opacity: 1;}
-    75%{opacity: 1;}
-    76%{ opacity: 0;}
-    100%{opacity: 0;}
-    }
-    .plist_img{
-    height: 100px;
-    width: 150px;
-    display: inline-block;
-    }
-    .pro_list{
-    border-bottom: 2px blue dotted;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    }
-    .plist{
-    display: inline-block;
-    
-    }
-    ul>li{
-    padding: 2px 2px;
-    }
-    .half {
-    position:relative;
-    }
-    .font{
-    /*font-size:6em;*/
-    }
-    .half:before {
-    content: "\e006"; /* put here default icon code*/
-    width: 47%;
-    display: block;
-    position: absolute;
-    overflow: hidden;
-    }
-    .half:after {
-    content: "\e007"; /* put here icon-empty code*/
-    }
-    </style>
-  </head>
-  <body>
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header btn-info" style="border-radius: 5px 5px 0px 0px;">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title "id="exampleModalLabel" >50% Discount</h4>
-            
-          </div>
-          <div class="modal-body">
-            <center>
-            <h1 class="modal-title" id="exampleModalLabel">Lonavala Foods</h1>
-            <br>
-            <h3 class="modal-title blink" id="exampleModalLabel">50% Discount On First Order</h3>
-            </center>
-            <br>
-            
-            <form class="form-horizontal" action="/action_page.php">
-              <div class="form-group">
-                <label class="control-label col-sm-4" >Name:</label>
-                <div class="col-sm-6">
-                  <input type="text" class="form-control"  placeholder="Enter Name">
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="control-label col-sm-4" >Contact Number:</label>
-                <div class="col-sm-6">
-                  <input type="text" class="form-control" placeholder="Enter Contact Number">
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="control-label col-sm-4" >Email Id:</label>
-                <div class="col-sm-6">
-                  <input type="text" class="form-control" placeholder="Enter Email Id">
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="control-label col-sm-4" >Your Location(City):</label>
-                <div class="col-sm-6">
-                  <input type="text" class="form-control" placeholder="Enter Your Location(City)">
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer btn-info" style="border-radius: 0px 0px 5px 5px;">
-            <center>
-            <button type="button" class="btn btn-primary">Submit</button>
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            
-            </center>
-          </div>
-        </div>
-      </div>
-    </div>
-    <nav class="navbar " style="margin-bottom:1px;">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <img class="navbar-brand" src="img/img1.jpg" alt="logo" >
-          <a class="navbar-brand" href="#" style="font-size:x-large;">LonavalaFoods.com</a>
-        </div>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-          <li><button class="btn btn-primary" type="submit" style="margin-top: 9px;"><span class="glyphicon glyphicon-shopping-cart"></span>  SHOPPING CART</button></li>
-        </ul>
-      </div>
-    </nav>
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Shops</a></li>
-          <li><a href="#">New Product</a></li>
-          <li><a href="#">Reviews</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">About Us</a></li>
-        </ul>
-        <form class="navbar-form navbar-right" action="/action_page.php">
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search">
-          </div>
-          <button type="submit" class="btn btn-default">Submit</button>
-        </form>
-      </div>
-    </nav>
-    
-    <!-- main body aside and article -->
-    <div class="container-fluid">
-      
-      <div class="row">
-        <div class="col-lg-4 " style="margin-bottom:20px;">
-          <nav class="navbar navbar-inverse">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="#" style="font-size:large;"><span class="glyphicon glyphicon-stats"></span> Most Viewed</a>
-            </div>
-          </nav>
-          <!-- Products List -->
-          
-          <div class="row pro_list">
-            <div class="col-lg-4" style="float:left;">
-              <img class="plist_img" src="img/product/1.jpg" alt="">
-            </div>
-            <div class="col-lg-8">
-              <ul type="none" class="plist">
-                <li>
-                  <button class="btn btn-info" type="Submit">
-                  <span class="glyphicon glyphicon-star"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                  </button>
-                </li>
-                <li><a href="#"><span class="glyphicon glyphicon-tags"></span> Lonavla special Corn Buttha</a></li>
-                <li><span class="glyphicon glyphicon-tags"></span>  Price: Rs.00:00/- only </li>
-              </ul>
-            </div>
-          </div>
-          <div class="row pro_list">
-            <div class="col-lg-4" style="float:left;">
-              <img class="plist_img" src="img/product/2.jpg" alt="">
-            </div>
-            <div class="col-lg-8">
-              <ul type="none" class="plist">
-                <li>
-                  <button class="btn btn-info" type="Submit">
-                  <span class="glyphicon glyphicon-star"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                  <span class="glyphicon glyphicon-star "></span>
-                  <span class="glyphicon glyphicon-star half "></span>
-                  <span class="glyphicon glyphicon-star-empty"></span>
-                  </button>
-                </li>
-                <li><a href="#"><span class="glyphicon glyphicon-tags"></span> Lonavla Sweet Chikki</a></li>
-                <li><span class="glyphicon glyphicon-tags"></span>  Price: Rs.00:00/- only </li>
-              </ul>
-            </div>
-          </div>
-          <div class="row pro_list">
-            <div class="col-lg-4" style="float:left;">
-              <img class="plist_img" src="img/product/3.jpg" alt="">
-            </div>
-            <div class="col-lg-8">
-              <ul type="none" class="plist">
-                <li>
-                  <button class="btn btn-info" type="Submit">
-                  <span class="glyphicon glyphicon-star"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                  <span class="glyphicon glyphicon-star half"></span>
-                  <span class="glyphicon glyphicon-star-empty"></span>
-                  <span class="glyphicon glyphicon-star-empty"></span>
-                  </button>
-                </li>
-                <li><a href="#"><span class="glyphicon glyphicon-tags"></span> Lonavla Corn Pakoda </a></li>
-                <li><span class="glyphicon glyphicon-tags"></span>  Price: Rs.00:00/- only </li>
-              </ul>
-            </div>
-          </div>
-          
-        </div>
-        <div class="col-lg-8">
-          <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-              <li data-target="#myCarousel" data-slide-to="3"></li>
-              <li data-target="#myCarousel" data-slide-to="4"></li>
-              <li data-target="#myCarousel" data-slide-to="5"></li>
-              <li data-target="#myCarousel" data-slide-to="6"></li>
-              <li data-target="#myCarousel" data-slide-to="7"></li>
-              <li data-target="#myCarousel" data-slide-to="8"></li>
-            </ol>
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-              <div class="item active">
-                <img src="img/slider/1.jpg" alt="Lonavla" style="width:100%; height: 500px;">
-              </div>
-              <div class="item">
-                <img src="img/slider/2.jpg" alt="Lonavla" style="width:100%; height: 500px;">
-              </div>
-              
-              <div class="item">
-                <img src="img/slider/3.jpg" alt="Lonavla" style="width:100%; height: 500px;">
-              </div>
-              <div class="item ">
-                <img src="img/slider/10.jpg" alt="Lonavla" style="width:100%; height: 500px;">
-              </div>
-              <div class="item">
-                <img src="img/slider/5.jpg" alt="Lonavla" style="width:100%; height: 500px;">
-              </div>
-              
-              <div class="item">
-                <img src="img/slider/6.jpg" alt="Lonavla" style="width:100%; height: 500px;">
-              </div>
-              <div class="item ">
-                <img src="img/slider/7.jpg" alt="Lonavla" style="width:100%; height: 500px;">
-              </div>
-              <div class="item">
-                <img src="img/slider/8.jpg" alt="Lonavla" style="width:100%; height: 500px;">
-              </div>
-              
-            </div>
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+<head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script  defer src="https://maps.googleapis.com/maps/api/js?libraries=places&language=en&key=AIzaSyCGU0PK5ks0K4jqqAZ6l2A6FKWUknklPkM"  type="text/javascript"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
-    <!-- <script src="js/jquery.js"></script> -->
-    <!-- <script src="js/bootstrap.min.js"></script> -->
-    <script>
-    $(document).ready(function(){
-    $('#exampleModal').modal('show');
+</head>
+<body>
+<div class="container">
+ <div class="row">
+     <div class="jumbotron">
+         <h1>Calculate the Distance Between two Addresses demo</h1>
+     </div>
+     <div class="col-md-6">
+<form id="distance_form">
+    <div class="form-group">
+    <label>Origin: </label>
+    <input  id="from_places" class="form-control" placeholder="Enter a location" />
+    <input id="origin" type="hidden" name="origin" required/>
+    </div>
+
+    <div class="form-group">
+    <label>Destination: </label>
+    <input  id="to_places" class="form-control" placeholder="Enter a location" />
+    <input id="destination" type="hidden" name="destination" required/>
+    </div>
+
+    <input type="submit" value="Calculate" class="btn btn-primary"/>
+</form>
+<div id="result">
+    <ul class="list-group">
+        <li  class="list-group-item d-flex justify-content-between align-items-center">
+            Distance In Mile :
+            <span id="in_mile" class="badge badge-primary badge-pill"></span>
+        </li>
+        <li  class="list-group-item d-flex justify-content-between align-items-center">
+            Distance is Kilo:
+            <span id='in_kilo' class="badge badge-primary badge-pill"></span>
+        </li>
+        <li  class="list-group-item d-flex justify-content-between align-items-center">
+            IN TEXT:
+            <span id="duration_text" class="badge badge-primary badge-pill"></span>
+        </li>
+        <li  class="list-group-item d-flex justify-content-between align-items-center">
+            IN MINUTES:
+            <span id="duration_value" class="badge badge-primary badge-pill"></span>
+        </li>
+
+        <li  class="list-group-item d-flex justify-content-between align-items-center">
+            FROM:
+            <span id="from" class="badge badge-primary badge-pill"></span>
+        </li>
+        <li  class="list-group-item d-flex justify-content-between align-items-center">
+            TO:
+            <span id="to" class="badge badge-primary badge-pill"></span>
+        </li>
+    </ul>
+</div>
+</div>
+</div>
+</div>
+<script>
+    $(function() {
+        // add input listeners
+        google.maps.event.addDomListener(window, 'load', function () {
+            var from_places = new google.maps.places.Autocomplete(document.getElementById('from_places'));
+            var to_places = new google.maps.places.Autocomplete(document.getElementById('to_places'));
+
+            google.maps.event.addListener(from_places, 'place_changed', function () {
+                var from_place = from_places.getPlace();
+                var from_address = from_place.formatted_address;
+                $('#origin').val(from_address);
+            });
+
+            google.maps.event.addListener(to_places, 'place_changed', function () {
+                var to_place = to_places.getPlace();
+                var to_address = to_place.formatted_address;
+                $('#destination').val(to_address);
+            });
+
+        });
+        // calculate distance
+        function calculateDistance() {
+            var origin = $('#origin').val();
+            var destination = $('#destination').val();
+            var service = new google.maps.DistanceMatrixService();
+            service.getDistanceMatrix(
+                {
+                    origins: [origin],
+                    destinations: [destination],
+                    travelMode: google.maps.TravelMode.DRIVING,
+                    unitSystem: google.maps.UnitSystem.IMPERIAL, // miles and feet.
+                    // unitSystem: google.maps.UnitSystem.metric, // kilometers and meters.
+                    avoidHighways: false,
+                    avoidTolls: false
+                }, callback);
+        }
+        // get distance results
+        function callback(response, status) {
+            if (status != google.maps.DistanceMatrixStatus.OK) {
+                $('#result').html(err);
+            } else {
+                var origin = response.originAddresses[0];
+                var destination = response.destinationAddresses[0];
+                if (response.rows[0].elements[0].status === "ZERO_RESULTS") {
+                    $('#result').html("Better get on a plane. There are no roads between "  + origin + " and " + destination);
+                } else {
+                    var distance = response.rows[0].elements[0].distance;
+                    var duration = response.rows[0].elements[0].duration;
+                    console.log(response.rows[0].elements[0].distance);
+                    var distance_in_kilo = distance.value / 1000; // the kilom
+                    var distance_in_mile = distance.value / 1609.34; // the mile
+                    var duration_text = duration.text;
+                    var duration_value = duration.value;
+                    $('#in_mile').text(distance_in_mile.toFixed(2));
+                    $('#in_kilo').text(distance_in_kilo.toFixed(2));
+                    $('#duration_text').text(duration_text);
+                    $('#duration_value').text(duration_value);
+                    $('#from').text(origin);
+                    $('#to').text(destination);
+                }
+            }
+        }
+        // print results on submit the form
+        $('#distance_form').submit(function(e){
+            e.preventDefault();
+            calculateDistance();
+        });
+
     });
-    </script>
-  </body>
+
+</script>
+</body>
 </html>
