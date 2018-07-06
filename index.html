@@ -5,7 +5,7 @@ if(isset($_POST['submit'])) {
 	$subject = $_POST['subject'];
 	$comments = $_POST['comments'];
 	$to = "surajchshinde@gmail.com";
-	$header = "From: $name<$email>";
+	$header = "From: $email";
 	$message ="Name: $name \n \n E-mail: $email \n\n Subject: $subject\n\n Message: $comments";
 	if (mail($to,$subject,$message,$headers)) {
 	echo "Thanks for mail";
