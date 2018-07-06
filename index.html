@@ -1,17 +1,12 @@
 <?php
-if(isset($_POST['submit'])) {
-	$name = $_POST['name'];
-	$email = $_POST['email'];
-	$subject = $_POST['subject'];
-	$comments = $_POST['comments'];
-	$to = "surajchshinde@gmail.com";
-	$header = "From: $email";
-	$message ="Name: $name \n \n E-mail: $email \n\n Subject: $subject\n\n Message: $comments";
-	if (mail($to,$subject,$message,$headers)) {
-	echo "Thanks for mail";
-	}else{
-		echo "Try again.";
-	}
+$to="surajchshinde@gmail.com";
+$subject="Test mail";
+$message="this is test mail";
+$headers="From:shinde.suraj924@gmail.com";
+if (mail($to,$subject,$message,$headers)) {
+echo "Thanks for mail";
+}else{
+	echo "Try again.";
 }
 
 ?>
