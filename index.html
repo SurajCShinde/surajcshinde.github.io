@@ -5,7 +5,7 @@ if(isset($_POST['submit'])) {
 	$subject = $_POST['subject'];
 	$comments = $_POST['comments'];
 	$to = "surajchshinde@gmail.com";
-	$header = "From: $name <$email>";
+	$header = "From: $name<$email>";
 	$message ="Name: $name \n \n E-mail: $email \n\n Subject: $subject\n\n Message: $comments";
 	if (mail($to,$subject,$message,$headers)) {
 	echo "Thanks for mail";
@@ -13,6 +13,7 @@ if(isset($_POST['submit'])) {
 		echo "Try again.";
 	}
 }
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -20,9 +21,10 @@ if(isset($_POST['submit'])) {
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>Lonavala foods</title>
+		
 	</head>
 	<body>
-		<form action="#" method="post" >
+		<form action="" method="post" >
 			
 			<p>Name:<br>
 				<input type="text" name="name">
