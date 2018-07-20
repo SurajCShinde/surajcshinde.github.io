@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Lonavala Foods</title>
+		<link rel="shortcut icon" href="img/Logo.png">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+		<!-- <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet"> -->
+		<!-- <link href="http://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700&amp;subset=latin,cyrillic-ext,cyrillic" rel="stylesheet" type="text/css"> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="js/custom.js"></script>
+		<!-- <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet"> -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<style type="text/css" media="screen">
+		*{
+		font-family: 'Roboto', sans-serif;
+		}
+		#navigation.fixed {
+		position: fixed;
+		top: 0px;
+		z-index: 200;
+		background: #0c061e;
+		width: 100%;
+		-webkit-transition: 1s;
+		-moz-transition: 1s;
+		transition: 1s;
+		}
+		#rotate{
+		z-index: 20;
+		position: fixed;
+		margin-top: 190px;
+		left: -40px;
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+		transform: rotate(rotate(270deg));
+		-ms-transform: rotate(rotate(270deg));
+		-moz-transform: rotate(rotate(270deg));
+		-webkit-transform: rotate(270deg);
+		-o-transform: rotate(rotate(270deg));
+		}
+		.sections.section-how-it-works {
+		background: url(img/section1-bg.png) bottom center #ededed repeat-x;
+		margin-bottom: -3px;
+		}
+		.section-how-it-works .steps {
+		border: 0px solid red;
+		max-width: 136px;
+		max-height: 124px;
+		min-height: 124px;
+		margin: auto;
+		display: block;
+		}
+		.section-how-it-works h3 {
+		background: #f75d34;
+		color: #fff;
+		padding: 5px;
+		display: inline-table;
+		text-align: center;
+		padding: 5px 25px;
+		border-bottom-left-radius: 10px;
+		}
+		.center, .section-how-it-works h3, .section-how-it-works p, .mobile-search-menu, .progress-dot, #mobile-menu li a, .result-merchant p.cod-text {
+		text-align: center;
+		}
+		.blink{
+		/*font-size: 240px;*/
+		Color: #e4024f;
+		font-weight: bolder;
+		text-shadow: 2px 3px 3px #d0bac1;
+		animation: blink 1s infinite;
+		}
+		
+		@keyframes blink{
+		0%{opacity: 1;}
+		75%{opacity: 1;}
+		76%{ opacity: 0;}
+		100%{opacity: 0;}
+		}
+		#header {
+		width: 100%;
+		box-shadow: 1px 1px 10px #000;
+		height: auto;
+		/*position: absolute;*/
+		z-index: 10;
+		}
+		#top {
+		margin-top: -20px;
+		width: auto;
+		height: auto;
+		min-height: 500px;
+		background: url(img/bgpattern.jpg) repeat left center #440228;
+		}
+		#we{
+		width: auto;
+		height: auto;
+		min-height: 600px;
+		/*background: url(img/background.jpg) repeat  #440228;*/
+		}
+		#chikki{
+		width: auto;
+		height: auto;
+		min-height: 600px;
+		background: url(img/bgchikki.JPG) repeat left center #440228;
+		background-size: 100%;
+		margin-top: -20px;
+		
+		}
+		#jelly{
+		width: auto;
+		height: auto;
+		min-height: 600px;
+		background: url(img/Jellycandy.jpg) repeat left center #440228;
+		background-size: 100%;
+		
+		}
+		#fudge{
+		width: auto;
+		height: auto;
+		min-height: 600px;
+		background: url(img/bgfudge.jpg) repeat left center #440228;
+		background-size: 100%;
+		}
+		#pay{
+		width: auto;
+		height: auto;
+		min-height: 400px;
+		/*background: url(img/bgfudge.jpg) repeat left center #440228;*/
+		background-size: 100%;
+		padding-bottom: 60px;
+		}
+		#find{
+		width: auto;
+		height: auto;
+		min-height: 600px;
+		background: url(img/bglonavala.jpg) repeat left center #440228;
+		background-size: 100%;
+		padding-bottom: 60px;
+		}
+		#sub{
+		width: auto;
+		height: auto;
+		min-height: 300px;
+		background: url(img/banner.jpg) repeat left center #440228;
+		/*background-size: 100%;*/
+		padding-bottom: 60px;
+		}
+		.btncircle{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border-radius: 50%;
+		height: 80px;
+		width: 80px;
+		}
+		.askPrice{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		}
+		.info{
+		background-color: #ffffffc9;
+		padding: 10px;
+		/*width: 310px;*/
+		/*float: right;*/
+		/*max-width: 340px;*/
+		}
+		.infomain{
+		border: 2px dashed #ab3562;
+		padding: 30px;
+		padding-top: 10px;
+		}
+		p{
+		text-align: justify;
+		/*color: yellow;*/
+		}
+		.weimg{
+		width: 300px;
+		height: 300px;
+		}
+		.trend{
+		/*background: url(img/background.jpg) repeat left center #440228;*/
+		width: 100%;
+		height: auto;
+		color: #f05f96;
+		}
+		/*
+		* ==== dodecagon
+		*/
+		.dodeca, .dodeca div {
+		margin: 0 auto;
+		transform-origin: 50% 50%;
+		overflow: hidden;
+		width: 270px;
+		height: 270px;
+		}
+		.dodeca {
+		transform: rotate(120deg);
+		}
+		.dode1 {
+		transform: rotate(-60deg);
+		}
+		.dode2 {
+		transform: rotate(-60deg);
+		}
+		.navbar-inverse {
+		background-color: #401f80;
+		border-color: #0c061e;
+		border-radius: 0px;
+		border-bottom: 4px solid #fc004f;
+		border-top: 4px solid #fc004f;
+		}
+		.navbar-inverse .navbar-nav>li>a {
+		color: #f05f96;
+		font-weight: bold;
+		font-size: 16px;
+		}
+		.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+		color: #442279;
+		background-color: #fc004f;
+		}
+		.navbar {
+		position: relative;
+		min-height: 50px;
+		margin-bottom: 0px;
+		margin-top: -5px;
+		/*border: 1px solid transparent;*/
+		}
+		
+		
+		.green-button {
+		background: #00b279;
+		border: 1px solid #00b279;
+		color: #fff;
+		padding: 5px 8px;
+		}
+		a {
+		/*color: #FFEB3B;*/
+		text-decoration: none;
+		/*text-shadow: 0px 1px 25px red, 0px 2px 25px #0c061e;*/
+		}
+		a:focus, a:hover {
+		color: #3B2483;
+		text-decoration: underline;
+		}
+		</style>
+	</head>
+	<body>
+		
+		
+		<div id="header">
+			<div class="container">
+				<h1 style="display: inline-block; margin: 5px;"><img class="img-thumbnail img-responsive" src="img/LogoHead.png" alt="LonavalaFoods.com"height="100px" width= "400px" style="border: none;" data-toggle="tooltip" data-placement="bottom"  title="Lonavala Foods, At Your Door step!"></h1>
+				
+				<h3 class="blink pull-right " style="display: inline;margin-top: 45px;
+				padding-left: 15px;" data-toggle="tooltip" data-placement="bottom"  title="Connect with us on Whatsapp!"><i class="fa fa-whatsapp" aria-hidden="true"> +91 898955739 </i> </h3>&nbsp;&nbsp;&nbsp;
+				<h3 class="pull-right " style="display: inline;margin-top:45px;" data-toggle="tooltip" data-placement="left"  title="Call Now!"> <i class="fa fa-phone" aria-hidden="true"> +91 898955739</i> </h3>
+				&nbsp;&nbsp;&nbsp;
+				<h3 class="pull-right " style="display: inline;margin-top:45px; font: normal normal normal 14px/1 FontAwesome;
+				font-size: 25px;" ><a href=""><i class="fa fa-user" aria-hidden="true"> Login / Sign Up</a></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+				
+			</div>
+		</div>
+		<button type="button" id="rotate" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#Feedback">Feedback</button>
+		<div class="modal fade" id="Feedback" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header " style="border-radius: 5px 5px 0px 0px;">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title "id="exampleModalLabel" ><img src="img/Logo.png" alt="LonavalaFoods.com" width="30px"> LonavalaFoods.Com</h4>
+						
+					</div>
+					<div class="modal-body">
+						<center>
+						<!-- <h1 class="modal-title" id="exampleModalLabel">Lonavala Foods</h1>            -->
+						<!-- <h3 class="modal-title blink" id="exampleModalLabel">50% Discount On First Order</h3> -->
+						</center>
+						<div class="info">
+							<div class="infomain">
+								<div class="row">
+									<div class="col-md-4">
+										<center>
+										<h3 style="font-size: 20px; "><span class="glyphicon glyphicon-map-marker"></span> Find US</h3>
+										<p style="text-align: center;">Lonavala(lnl) 410 401, </p>
+										<p style="text-align: center;">Pune, Maharastra, India</p>
+										
+										<h3 style="font-size: 20px;"><span class="glyphicon glyphicon-envelope"></span> Email </h3>
+										<p style="text-align: center;">info@lonavalafoods.com</p>
+										<p style="text-align: center;">lonavalafoods@gmail.com</p>
+										<!-- <p style="text-align: center;">lonavalafoods@outlook.com</p> -->
+										
+										<h3 style="font-size: 20px;"> <span class="glyphicon glyphicon-earphone"></span> Phones</h3>
+										<p style="text-align: center;">+91 89 89 55 739</p>
+										<p style="text-align: center;">+91 89 89 55 739</p>
+										</center>
+									</div>
+									<div class="col-md-8 text-center">
+										<h3> Get in touch</h3>
+										<form class="form-horizontal" action="/action_page.php">
+											<input type="text" class="form-control"  placeholder="Name"><br>
+											<input type="text" class="form-control" placeholder="Contact Number"><br>
+											<input type="text" class="form-control" placeholder="E-mail"><br>
+											<textarea id="myTextarea" class="form-control" rows="5"  placeholder="Your Message"></textarea><br>
+											
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<div class="modal-footer" style="border-radius: 0px 0px 5px 5px;">
+						<center>
+						<button type="button" class="btn btn-primary">Submit</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						
+						</center>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <button type="button" id="rotate" class="btn btn-info btn-lg pull-right" data-toggle="modal" data-target="#exampleModal">Open Modal</button>
+		-->
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#myCarousel" data-slide-to="3"></li>
+				<li data-target="#myCarousel" data-slide-to="4"></li>
+				<li data-target="#myCarousel" data-slide-to="5"></li>
+				<li data-target="#myCarousel" data-slide-to="6"></li>
+				<li data-target="#myCarousel" data-slide-to="7"></li>
+				<li data-target="#myCarousel" data-slide-to="8"></li>
+			</ol>
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="img/slider/1.jpg" alt="Lonavla" style="width:100%; height: 500px;">
+				</div>
+				<div class="item">
+					<img src="img/slider/2.jpg" alt="Lonavla" style="width:100%; height: 500px;">
+				</div>
+				
+				<div class="item">
+					<img src="img/slider/3.jpg" alt="Lonavla" style="width:100%; height: 500px;">
+				</div>
+				<div class="item ">
+					<img src="img/slider/4.jpg" alt="Lonavla" style="width:100%; height: 500px;">
+				</div>
+				<div class="item">
+					<img src="img/slider/5.jpg" alt="Lonavla" style="width:100%; height: 500px;">
+				</div>
+				
+				<div class="item">
+					<img src="img/slider/6.jpg" alt="Lonavla" style="width:100%; height: 500px;">
+				</div>
+				<div class="item ">
+					<img src="img/slider/7.jpg" alt="Lonavla" style="width:100%; height: 500px;">
+				</div>
+				<div class="item">
+					<img src="img/slider/8.jpg" alt="Lonavla" style="width:100%; height: 500px;">
+				</div>
+				
+			</div>
+			<!-- Left and right controls -->
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+		<div  id="navigation">
+			<nav class="navbar navbar-inverse ">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#"></a>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#header"><span class="glyphicon glyphicon-home"></span></a></li>
+							<li><a href="#top">Speciality</a></li>
+							<li><a href="#chikki">Chikki</a></li>
+							<li><a href="#jelly">Jelly</a></li>
+							<li><a href="#fudge">Fudge</a></li>
+							<li><a href="#find">Find Us</a></li>
+							
+						</ul>
+						
+					</div>
+				</div>
+			</nav>
+		</div>
+		<section id="top" class="container trend">
+			<div class="row text-center ">
+				
+				<h1 style="color: yellow;     text-shadow: 0px 1px 13px #F44336, 0px 2px 25px #673AB7; margin-top: 70px;">Our Speciality</h1>
+				<h3 style="color: #fff; text-shadow: 0px 1px 25px #673AB7, 0px 2px 25px #0c061e;"><i>"We're in love with food. The secret of quality of life? Quality products."</i></h3>
+				<br>
+				<div class="col-lg-3 col-lg-offset-1">
+					<div class="dodeca">
+						<div class="dode1">
+							<div class="dode2">
+								<a href="#chikki"><img src="img/chikki.jpg" alt="Jelly" width="313" height="313" /><button class="btn btn-lg btn-primary btncircle" type="submit" data-toggle="modal" data-target="#Feedback">
+								Buy</button></a>
+							</div>
+						</div>
+					</div>
+					<br>
+					<h2><a href="#chikki">Chikki</a></h2>
+					<br>
+				</div>
+				<div class="col-lg-3">
+					<div class="dodeca">
+						<div class="dode1">
+							<div class="dode2">
+								<a href="#jelly"><img src="img/Jellycandy.jpg" alt="Jelly" width="313" height="313" /><button class="btn btn-lg btn-primary btncircle" type="submit" data-toggle="modal" data-target="#Feedback">
+								Buy</button></a>
+							</div>
+						</div>
+					</div>
+					<br>
+					<h2><a href="#jelly">Jelly</a></h2>
+					<br>
+				</div>
+				<div class="col-lg-3">
+					
+					<div class="dodeca">
+						<div class="dode1">
+							<div class="dode2">
+								<a href="#fudge"><img src="img/fudge.jpg" alt="Jelly" width="270" height="313" /><button class="btn btn-lg btn-primary btncircle" type="submit" data-toggle="modal" data-target="#Feedback">
+								Buy</button></a>
+							</div>
+						</div>
+					</div>
+					<br>
+					<h2><a href="#fudge">Fudge</a></h2>
+					<br>
+				</div>
+				<div class="col-lg-2" style="background-color: #fff;     min-height: 200px;">
+					<h2>Advertisement</h2>
+					<p>Nulla non mattis risus. Praesent accumsan at diam ut molestie.Non mattis risus. Praesent accumsan at diam ut molestie. Vivamus est mauris, rutrum sed sollicitudin id, semper vel justo. Donec vitae magna elementum, tempus ante in, aliquam nibh.Nulla non mattis risus. Praesent accumsan at diam ut molestie.Non mattis risus. Praesent accumsan at diam ut molestie.</p>
+					<button class="btn btn-lg btn-primary btn-block" type="submit" data-toggle="modal" data-target="#Feedback">Contact</button>
+				</div>
+			</div>
+		</section>
+		
+		<!-- <div id="how" class="sections section-how-it-works">
+					<div class="container text-center">
+								<br><br><br><br><br>
+								<h2>How it works</h2>
+								<p class="center">Get your favourite food in 4 simple steps</p>
+								<div class="row">
+											<div class="col-md-3 col-sm-3 center">
+														<div class="steps step1-icon">
+																	<img src="img/step1.png">
+														</div>
+														<h3>Search</h3>
+														<p>Find all restaurants available near you</p>
+											</div>
+											<div class="col-md-3 col-sm-3 center">
+														<div class="steps step2-icon">
+																	<img src="img/step2.png">
+														</div>
+														<h3>Choose</h3>
+														<p>Browse hundreds of menus to find the food you like</p>
+											</div>
+											<div class="col-md-3 col-sm-3 center">
+														<div class="steps step2-icon">
+																	<img src="img/step3.png">
+														</div>
+														<h3>Pay</h3>
+														<p>It's quick, secure and easy</p>
+											</div>
+											<div class="col-md-3 col-sm-3 center">
+														<div class="steps step2-icon">
+																	<img src="img/step4.png">
+														</div>
+														<h3>Enjoy</h3>
+														<p>Food is prepared &amp; delivered to your door</p>
+											</div>
+								</div>
+				</div> <!--container-->
+			</div> -->
+			
+			<section id="chikki" class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center"><br><br><br>
+						<h1 style="color: #fff; font-size: 55px; margin-bottom: 30px;     margin-top: 30px;">Chikki</h1>
+						<div class="col-lg-6">
+							<img class=" img-thumbnail img-responsive" src="img/chikkiprod.jpg"  style="height: 400px;width: 400px;" alt="Chikki">
+							<button class="btn btn-lg btn-primary askPrice" type="submit" data-toggle="modal" data-target="#Feedback">
+							₹ | Ask for Price</button><br>
+						</div>
+						<div class="col-lg-6">
+							<div class="info">
+								<div class="infomain">
+									<h2>Chikki</h2>
+									<p>Chikki (Hindi: चिक्की) is a traditional Indian sweet (brittle) generally made from peanuts and jaggery.There are several different varieties of chikki in addition to the most common groundnut (peanut) chikki. Each variety of chikki is named depending upon the ingredients used, which include puffed or roasted Bengal gram, sesame, puffed rice, beaten rice, or Khobara (desiccated coconut).</p>
+									<p>In regions of North India, especially Bihar and Uttar Pradesh, this sweet is called Layiya Patti. In Sindh and Sindhi regions of India, it is called Layee or Lai (Sindhi: لائي‎) and in Bangladesh, it is known as kôtkôti (Bengali: কটকটি). Similar dishes are also very popular in Brazil, where it is known as pé-de-moleque, and in Paraguay, where it is called Ka'í Ladrillo.</p>
+								</div>
+							</div>
+							<button class="btn btn-lg btn-primary btn-block" type="submit" data-toggle="modal" data-target="#Feedback">Yes! I am interested</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="jelly" class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center"><br><br><br>
+						<h1 style="color: #fff; font-size: 55px; margin-bottom: 30px;     margin-top: 30px;">Jelly</h1>
+						
+						<div class="col-lg-6 order-lg-12">
+							<div class="info">
+								<div class="infomain">
+									<h2>Jelly</h2>
+									<p>Fruit jams and jellies are manufactured by canning fruits .Jellies are a mixture of fruit juice, sugar and are clear and bright with a tender but firm texture. Jams are thicker, made by cooking fruit and sugar until the texture is almost a puree.</p>
+									<p>The jams and jellies battled innovative breakfast foods that competed with the traditional toast-and-jam breakfast. This product experiences the strongest sales in the autumn back-to-school season.</p>
+									<p>At National Chikki, we provide wide variety of nutritional fruit Jams and Jellies. These products are prepared from different flavors such as apple, mango, blackberries, grapes, pineapple, orange, strawberry, mixed fruit and many more. These are extremely tasty and are a perfect accompaniment for breakfast and evening snacks. The quality of our jams and jellies are praised by people of all age for its high nutrition content and low calorie. One taste of our products can bring you back into the true old fashion delicious flavour of times past or more modern variations of current times.</p>
+								</div>
+							</div>
+							<button class="btn btn-lg btn-primary btn-block" type="submit" data-toggle="modal" data-target="#Feedback">Yes! I am interested</button>
+						</div>
+						<div class="col-lg-6 order-lg-1">
+							<img class=" img-thumbnail img-responsive " src="img/candy.jpg"  style="height: 400px;width: 400px;" alt="Jelly">
+							
+							<button class="btn btn-lg btn-primary askPrice" type="submit" data-toggle="modal" data-target="#Feedback">₹ | Ask For Price</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="fudge" class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center"><br><br><br>
+						<h1 style="color: brown; font-size: 55px; margin-bottom: 30px;     margin-top: 30px;">Fudge</h1>
+						<div class="col-lg-6">
+							<img class=" img-thumbnail img-responsive" src="img/fudgeProd.jpg"    style="height: 400px;width: 400px;" alt="Chikki">
+							<button class="btn btn-lg btn-primary askPrice" type="submit" data-toggle="modal" data-target="#Feedback">₹ | Ask For Price</button>
+						</div>
+						<div class="col-lg-6">
+							<div class="info">
+								<div class="infomain">
+									<h2>Fudge</h2>
+									<p>Fudge is a type of sugar candy that is made by mixing sugar, butter and milk, heating it to the soft-ball stage at 240 °F (116 °C), and then beating the mixture while it cools so that it acquires a smooth, creamy consistency. Fruits, nuts, chocolate, caramel, candies, sweets and other flavours are sometimes added either inside or on top.</p>
+									<p>In a letter written in 1921 by Emelyn Battersby Hartridge, she recounts the purchasing of a box of fudge for 40 cents a pound in 1886 in Baltimore, Maryland. A student at Vassar College in Poughkeepsie, New York, she claimed to have made introduced it there in 1888 by selling her own 30 lb (14 kg) batch. The diary of another student mentions making "fudges" in 1892. An 1893 letter from another Vassar College student describes "fudges" as containing sugar, chocolate, milk and butter. A recipe for "Fudges at Vassar" was printed in The Sun in 1895. Despite describing the confections as "Vassar chocolates", the recipe given comprises sugar, milk, butter and vanilla extract.</p>
+								</div>
+							</div>
+							<button class="btn btn-lg btn-primary btn-block" type="submit" data-toggle="modal" data-target="#Feedback">Yes! I am interested</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- <section id="we" class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<br><br><br>
+						<h1 class="text-center" style="margin-top: 50px;">We are happy to help you...!</h1>
+						<div class="col-lg-2 text-center"></div>
+						<div class="col-lg-8 text-center">
+							<center><p style=" text-align:center; "><i>Nulla non mattis risus. Praesent accumsan at diam ut molestie.Non mattis risus. Praesent accumsan at diam ut molestie. Vivamus est mauris, rutrum sed sollicitudin id, semper vel justo. Donec vitae magna elementum, tempus ante in, aliquam nibh.</i></p></center>
+						</div>
+						<div class="col-lg-2 text-center"></div>
+						<br><br>
+						<div class="col-lg-4 text-center">
+							<h2>How to Buy?</h2>
+							<img class="weimg" src="img/user.png" alt="User">
+							<center><p>Nulla non mattis risus. Praesent accumsan at diam ut molestie.Non mattis risus. Praesent accumsan at diam ut molestie. Vivamus est mauris, rutrum sed sollicitudin id, semper vel justo. Donec vitae magna elementum, tempus ante in, aliquam nibh.</p><button class="btn btn-lg btn-primary btn-block" type="submit"  data-toggle="modal" data-target="#Feedback">Order</button></center>
+						</div>
+						<div class="col-lg-4 text-center">
+							<H2>How to get Agency?</H2>
+							<img class="weimg" src="img/agent.png" alt="Agents">
+							
+							<center><p>Nulla non mattis risus. Praesent accumsan at diam ut molestie.Non mattis risus. Praesent accumsan at diam ut molestie. Vivamus est mauris, rutrum sed sollicitudin id, semper vel justo. Donec vitae magna elementum, tempus ante in, aliquam nibh.</p><button class="btn btn-lg btn-primary btn-block" type="submit" data-toggle="modal" data-target="#Feedback">Enquiry</button></center>
+						</div>
+						<div class="col-lg-4 text-center">
+							<h2>How to Sell?</h2>
+							<img class="weimg" src="img/service.png" alt="Sellers">
+							
+							<center><p >Nulla non mattis risus. Praesent accumsan at diam ut molestie.Non mattis risus. Praesent accumsan at diam ut molestie. Vivamus est mauris, rutrum sed sollicitudin id, semper vel justo. Donec vitae magna elementum, tempus ante in, aliquam nibh.</p><button class="btn btn-lg btn-primary btn-block" type="submit" data-toggle="modal" data-target="#Feedback">Contact</button></center>
+						</div>
+					</div>
+				</div>
+				<br>
+			</section> -->
+			<section id="find" class="container text-center"><br>
+				<h1 style="color: #fff; font-size: 55px; margin-bottom: 10px;     margin-top: 40px;">Find Us</h1>
+				<h3 style="color: #fff; margin-bottom: 50px;"><i>We're in love with food. The secret of quality of life? Quality products.</i></h3>
+				<div class="row text-center">
+					<div class="col-lg-1"></div>
+					<div class="col-lg-6">
+						<div class="info">
+							<div class="infomain">
+								<div class="row">
+									<div class="col-md-4">
+										<h3 style="text-align: center;
+										font-size: 20px; "><span class="glyphicon glyphicon-map-marker"></span> Find US</h3>
+										<p style="text-align: center;">Lonavala(lnl) 410 401, </p>
+										<p style="text-align: center;">Pune, Maharastra, India</p>
+										<h3 style="text-align: center;
+										font-size: 20px;"><span class="glyphicon glyphicon-envelope"></span> Email </h3>
+										<p style="text-align: center;">info@lonavalafoods.com</p>
+										<p style="text-align: center;">lonavalafoods@gmail.com</p>
+										<h3 style="text-align: center;
+										font-size: 20px;"> <span class="glyphicon glyphicon-earphone"></span> Phones</h3>
+										<p style="text-align: center;">+91 89 89 55 739</p>
+										<p style="text-align: center;">+91 89 89 55 739</p>
+									</div>
+									<div class="col-md-8 text-center">
+										<h3>Get in touch</h3>
+										<form class="form-horizontal" action="/action_page.php">
+											<input type="text" class="form-control"  placeholder="Name"><br>
+											<input type="text" class="form-control" placeholder="Contact Number"><br>
+											<input type="text" class="form-control" placeholder="E-mail"><br>
+											<textarea id="myTextarea" class="form-control" rows="5"  placeholder="Your Message"></textarea><br>
+											<button class="btn btn-lg btn-primary btn-block" type="submit">Send</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120893.26608826048!2d73.34168238767816!3d18.757352815091803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be801098bdf8145%3A0x696b4a60a5e28658!2sLonavala%2C+Maharashtra!5e0!3m2!1sen!2sin!4v1530097012782" width= "450px" height="461px" frameborder="2" style="border:3px solid White" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="col-lg-1"></div>
+			</section>
+			<!-- <section id="pay" class="container text-center">
+						<div class="row">
+									<br><br><br><br>
+									<h1>Payment methods</h1>
+									<h4>Donec vitae magna elementum, tempus ante in, aliquam nibh.</h4>
+									<br>
+									<img class=" img-thumbnail img-responsive" src="img/qr-code.png"  style="height: 350px; width: auto;" alt="QR Code">
+						</div>
+						<br>
+			</section> -->
+			<section id="sub" class="container ">
+				<div class="row text-center">
+					<h1 style="color: #FFEB3B; font-size: 35px; margin-bottom: 10px; margin-top: 40px;     text-shadow: 0px 1px 10px red, 0px 2px 25px #0c061e;">Subscribe to our newsletter for special offers!</h1><br>
+					<input placeholder="Enter your email" required="1" class="email" type="text" value="" name="subscriber_email" id="subscriber_email" style="font-size: 18px; padding: 13px 18px; ">
+					<button class="btn btn-success btn-lg" style="font-size: 18px;
+					padding: 13px 18px;  "> Subscribe </button>
+					<br><br>
+					<img class="img-responsive" src="img/divider.png" alt="">
+					<br>
+				</div>
+				<div class="row" style="color: #fff; ">
+					<div class="col-lg-12">
+						<div class="col-lg-6 text-left col-lg-offset-1 "  style="color: #FFF; text-shadow: 0px 1px 10px red, 0px 2px 25px #0c061e;">
+							<p><span class="glyphicon glyphicon-map-marker"></span>&nbsp;Lonavala(lnl) 410 401, Pune, Maharastra, India</p>
+							<p><span class="glyphicon glyphicon-envelope"></span>&nbsp; info@lonavalafoods.com / lonavalafoods@gmail.com</p>
+							<p><span class="glyphicon glyphicon-earphone"></span>&nbsp; +91 898955739 / +91 898955739</p>
+						</div>
+						<!--  -->
+						<div class="col-lg-4 col-lg-offset-1 text-right ">
+							<h3 style="margin-top: 0px; text-shadow: 0px 1px 10px red, 0px 2px 25px #0c061e;">Connect with us</h3>
+							<h1><a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a>&nbsp; <a href=""><i class="fa fa-google-plus-official" aria-hidden="true"></i></a>&nbsp; <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>&nbsp; <a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>&nbsp; <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>&nbsp;
+							</h1>
+							
+							
+							
+						</div>
+						
+					</div>
+					<!-- <div class="col-lg-6">
+								
+					</div> -->
+				</div>
+			</section>
+			<script>
+			function myFunction() {
+			document.getElementById("myTextarea").placeholder = "Your Messsage";
+			}
+			$(document).ready(function(){
+			$('[data-toggle="tooltip"]').tooltip();
+			});
+			</script>
+		</body>
+	</html>
