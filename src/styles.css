@@ -1,0 +1,148 @@
+/* @import "~/bootstrap/dist/css/bootstrap.css"; */
+/* @import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css"; */
+
+* {
+  /*font-family: 'Roboto', sans-serif;*/
+  font-family: 'Droid Serif', serif;
+  /* color: #ffffff; */
+}
+
+a:hover {
+  color: #E91E63 !important;
+  text-decoration: underline;
+}
+
+h1,h2,h3,h4,h5,h6{
+  color: #ffffff !important;
+}
+.table th,
+.table td{
+  color: #ffffff !important;
+}
+li{
+  color: #ffffff !important;
+}
+
+@font-face {
+  font-family: 'Droid Serif';
+  src: url('assets/font/DroidSerif-Regular.ttf');
+}
+
+.myfont {
+  font-family: 'Droid Serif', serif;
+}
+
+.col-lg-6>h4 {
+  font-size: 21px;
+}
+
+hr {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 0.6px solid #ffffff !important;
+  /* color: #ffffff !important; */
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: normal;
+  color: #fff;
+  font-style: italic;
+  font-family: 'Droid Serif', serif;
+  font-size: 45px !important;
+  font-weight: 400;
+  line-height: 49px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+
+
+h2 {
+  text-align: center;
+  /*letter-spacing: normal;*/
+  color: #fff;
+  /* font-style: italic; */
+  font-family: 'Droid Serif';
+  font-size: 25px !important;
+  /*font-weight: 200;*/
+  line-height: 49px;
+  margin: 0;
+}
+h4{
+    font-size: 18px !important;
+    margin: 15px 0 15px 0 !important;
+}
+body {
+  /* background: url(assets/img/0637.jpg) repeat top center #1b1a1a; */
+  /* color: #fff; */
+}
+
+
+.btnCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.col-lg-3>h4 {
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 0;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.img-thumbnail {
+  border-radius: 0;
+}
+
+
+.borderstyleIn {
+  background-color: #5f5b5bc2;
+  border-radius: 30px;
+  padding: 10px;
+  border: 2px solid #fff;
+  /*margin-right: -80px;*/
+  margin-top: 5px;
+  /*margin-left: -66px;*/
+}
+
+.borderstyleIn>h3 {
+  margin: 10px;
+  letter-spacing: 1px;
+}
+
+.borderstyleIn>h4 {
+  font-size: 15px !important;
+  letter-spacing: 1px;
+  /*text-align: center;*/
+  padding-left: 10px;
+}
+
+.gallery img {
+  width: 150px;
+  height: 150px;
+  /*filter: grayscale(100%);*/
+  opacity: 0.6;
+  transition: 200ms;
+}
+
+.gallery img:hover {
+  /*filter: grayscale(0);*/
+  opacity: 1;
+  transform: scale(1.8);
+  cursor: zoom-in;
+}
+
+.gallery .col-lg-2 {
+  margin: 35px 0 35px 0;
+}
+
+table th {
+  text-align: center;
+}
+
+.glyphicon-star {
+  color: gold;
+}
